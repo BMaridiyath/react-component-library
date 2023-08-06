@@ -1,0 +1,27 @@
+{
+  "name": "awesome-library",
+  "version": "1.0.0",
+  "description": "build a react component lib",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "rollup": "rollup -c"
+  },
+  "author": "Maridiyath & Thomas",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/react": "^18.2.18",
+    "react": "^18.2.0",
+    "rollup": "^3.27.2",
+    "rollup-plugin-dts": "^5.3.1",
+    "tslib": "^2.6.1",
+    "typescript": "^5.1.6"
+  }
+}
