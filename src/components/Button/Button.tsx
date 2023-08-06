@@ -1,9 +1,11 @@
 import React from "react";
+import "./Button.css";
 
 export type ButtonProps = React.ComponentProps<"button"> & {
+  variant?: "primary" | "secondary";
   children: React.ReactNode;
 };
 
-export function Button({ children }: ButtonProps) {
-  return <button>{children}</button>;
+export function Button({ variant, children }: ButtonProps) {
+  return <button data-button={`variant:${variant}`}>{children}</button>;
 }
